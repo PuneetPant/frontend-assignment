@@ -25,10 +25,6 @@ const Table = () => {
   const [searchText, setSearchText] = useState("");
   const [filteredUsers, setFilteredUsers] = useState([]);
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   const fetchData = async () => {
     try {
       const resp = await fetch(API_URL);
@@ -54,6 +50,10 @@ const Table = () => {
       });
     }
   };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const handlePageSize = (e) => {
     setPageSize(e.target.value);
@@ -136,7 +136,7 @@ const Table = () => {
         <div className="pagination">
           <button
             className="btn"
-            disabled={pageNo === 1}
+            disabled={pageNo === 1 || pageNo === 0}
             onClick={() => setPageNo(pageNo - 1)}
           >
             {prevButton}
