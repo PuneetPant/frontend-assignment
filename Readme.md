@@ -2,10 +2,10 @@
 
 -> Added Table component, which fetched data from an API.
 
--> Added Page limit increase/decrease functionality
+-> Added page limit increase/decrease functionality, to view more items on the single page.
 
--> Added search functionality to fitler out results
+-> Added search functionality to filter out results.
 
--> Added unit tests
+-> Added unit tests.
 
--> Accessibility handled
+-> Accessibility handled.
