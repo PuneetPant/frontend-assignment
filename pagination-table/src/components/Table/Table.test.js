@@ -47,8 +47,6 @@ describe('Table Component', () => {
       expect(screen.getByText("20")).toBeInTheDocument();
       expect(screen.getByText("7")).toBeInTheDocument();
     });
-
-
   });
 
   test("handles API fetch failure", async () => {
